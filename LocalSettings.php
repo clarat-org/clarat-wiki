@@ -157,5 +157,5 @@ require_once( "$IP/extensions/ApprovedRevs/ApprovedRevs.php" );
 $wgGroupPermissions['*']['viewlinktolatest'] = false;
 $wgGroupPermissions['sysop']['viewlinktolatest'] = true
 $egApprovedRevsBlankIfUnapproved = true;
-$egApprovedRevsShowNotApprovedMessage = false;
+
 
