@@ -157,8 +157,8 @@ require_once( 'extensions/NewestPages/NewestPages.php' );
 #Approved Revs Einstellungen
 require_once( "$IP/extensions/ApprovedRevs/ApprovedRevs.php" );
 
-$wgGroupPermissions['*']['viewlinktolatest'] = false;
-$wgGroupPermissions['sysop']['viewlinktolatest'] = true;
-$egApprovedRevsBlankIfUnapproved = true;
+#$wgGroupPermissions['*']['viewlinktolatest'] = false;
+#$wgGroupPermissions['sysop']['viewlinktolatest'] = true;
+#$egApprovedRevsBlankIfUnapproved = true;
 
 
