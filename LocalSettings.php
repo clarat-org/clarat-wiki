@@ -153,9 +153,9 @@ require_once "$IP/skins/Vector/Vector.php";
 require_once( 'extensions/NewestPages/NewestPages.php' );
 
 #Approved Revs Einstellungen
-require_once( "$IP/extensions/ApprovedRevs/ApprovedRevs.php" );
-$wgGroupPermissions['*']['viewlinktolatest'] = false;
-$wgGroupPermissions['sysop']['viewlinktolatest'] = true
-$egApprovedRevsBlankIfUnapproved = true;
+#require_once( "$IP/extensions/ApprovedRevs/ApprovedRevs.php" );
+#$wgGroupPermissions['*']['viewlinktolatest'] = false;
+#$wgGroupPermissions['sysop']['viewlinktolatest'] = true
+#$egApprovedRevsBlankIfUnapproved = true;
 
 
