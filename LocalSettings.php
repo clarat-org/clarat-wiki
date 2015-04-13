@@ -148,3 +148,6 @@ require_once "$IP/skins/Vector/Vector.php";
 
 # End of automatically generated settings.
 # Add more configuration options below.
+
+# Enable NewestPages extension
+require_once( 'extensions/NewestPages/NewestPages.php' );
