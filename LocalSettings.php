@@ -157,6 +157,13 @@ require_once( "$IP/extensions/ApprovedRevs/ApprovedRevs.php" );
 
 $wgGroupPermissions['*']['viewlinktolatest'] = false;
 $wgGroupPermissions['sysop']['viewlinktolatest'] = true;
+$wgGroupPermissions['sysop']['approverevisions'] = true;
 $egApprovedRevsBlankIfUnapproved = true;
+$egApprovedRevsShowApproveLatest = true;
+
+#WikiEditor aktivieren
+require_once "$IP/extensions/WikiEditor/WikiEditor.php";
+$wgDefaultUserOptions['usebetatoolbar'] = 1;
+$wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 
 
