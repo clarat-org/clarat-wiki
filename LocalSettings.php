@@ -166,4 +166,5 @@ require_once "$IP/extensions/WikiEditor/WikiEditor.php";
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 
-
+#Cite Extension aktivieren
+require_once("$IP/extensions/Cite/Cite.php");
