@@ -168,3 +168,6 @@ $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 
 #Cite Extension aktivieren
 require_once("$IP/extensions/Cite/Cite.php");
+
+#Open links in new Tab
+$wgExternalLinkTarget = '_blank';
