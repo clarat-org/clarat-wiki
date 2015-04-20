@@ -173,7 +173,7 @@ $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 #Cite Extension aktivieren
 require_once("$IP/extensions/Cite/Cite.php");
 
-<<<<<<< HEAD
+
 #activate 'Category Tree' extension
 $wgUseAjax = true;
 require_once "$IP/extensions/CategoryTree/CategoryTree.php";
@@ -183,4 +183,3 @@ require_once( 'extensions/SelectCategory/SelectCategory.php' );
 =======
 #Open links in new Tab
 $wgExternalLinkTarget = '_blank';
->>>>>>> origin/master
