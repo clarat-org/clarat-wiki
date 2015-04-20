@@ -180,6 +180,6 @@ require_once "$IP/extensions/CategoryTree/CategoryTree.php";
 
 #activate 'select Category' extension
 require_once( 'extensions/SelectCategory/SelectCategory.php' );
-=======
+
 #Open links in new Tab
 $wgExternalLinkTarget = '_blank';
