@@ -164,6 +164,8 @@ require_once( "$IP/extensions/ApprovedRevs/ApprovedRevs.php" );
 
 $egApprovedRevsBlankIfUnapproved = true;
 $egApprovedRevsShowApproveLatest = true;
+$egApprovedRevsAutomaticApprovals = false;
+
 
 #WikiEditor aktivieren
 require_once "$IP/extensions/WikiEditor/WikiEditor.php";
