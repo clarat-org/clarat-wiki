@@ -37,7 +37,7 @@ $wgStylePath = "$wgScriptPath/skins";
 
 ## The relative URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
-$wgLogo = "$wgScriptPath/resources/assets/wiki.png";
+$wgLogo = "$wgScriptPath/images/claratwiki.png";
 
 ## UPO means: this is also a user preference option
 
@@ -127,8 +127,19 @@ $wgRightsIcon = "{$wgResourceBasePath}/resources/assets/licenses/cc-0.png";
 $wgDiff3 = "/usr/bin/diff3";
 
 # The following permissions were set based on your choice in the installer
-$wgGroupPermissions['*']['createaccount'] = false;
-$wgGroupPermissions['*']['edit'] = false;
+$wgGroupPermissions['*'    ]['createaccount']   = false;
+$wgGroupPermissions['*'    ]['edit']            = false;
+$wgGroupPermissions['*'    ]['read']            = false;
+$wgGroupPermissions['sysop']['createaccount']   = true;
+$wgGroupPermissions['user' ]['edit']            = true;
+$wgGroupPermissions['user' ]['read']            = true;
+
+#Approved Revs Grouppermissions
+$wgGroupPermissions['*']['viewlinktolatest'] = false;
+$wgGroupPermissions['sysop']['viewlinktolatest'] = true;
+$wgGroupPermissions['sysop']['approverevisions'] = true;
+$wgGroupPermissions['user']['viewlinktolatest'] = true;
+$wgGroupPermissions['user']['approverevisions'] = true;
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
@@ -144,3 +155,34 @@ require_once "$IP/skins/Vector/Vector.php";
 
 # End of automatically generated settings.
 # Add more configuration options below.
+
+# Enable NewestPages extension
+require_once( 'extensions/NewestPages/NewestPages.php' );
+
+#activate Approved Revs
+require_once( "$IP/extensions/ApprovedRevs/ApprovedRevs.php" );
+
+
+$egApprovedRevsBlankIfUnapproved = true;
+$egApprovedRevsShowApproveLatest = true;
+$egApprovedRevsAutomaticApprovals = false;
+
+
+#WikiEditor aktivieren
+require_once "$IP/extensions/WikiEditor/WikiEditor.php";
+$wgDefaultUserOptions['usebetatoolbar'] = 1;
+$wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
+
+#Cite Extension aktivieren
+require_once("$IP/extensions/Cite/Cite.php");
+
+
+#activate 'Category Tree' extension
+$wgUseAjax = true;
+require_once "$IP/extensions/CategoryTree/CategoryTree.php";
+
+#activate 'select Category' extension
+require_once( 'extensions/SelectCategory/SelectCategory.php' );
+
+#Open links in new Tab
+$wgExternalLinkTarget = '_blank';
