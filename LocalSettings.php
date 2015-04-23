@@ -139,6 +139,7 @@ $wgGroupPermissions['*']['viewlinktolatest'] = false;
 $wgGroupPermissions['sysop']['viewlinktolatest'] = true;
 $wgGroupPermissions['sysop']['approverevisions'] = true;
 $wgGroupPermissions['user']['viewlinktolatest'] = true;
+$wgGroupPermissions['user']['approverevisions'] = true;
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
