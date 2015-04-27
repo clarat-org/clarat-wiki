@@ -133,6 +133,8 @@ $wgGroupPermissions['*'    ]['read']            = false;
 $wgGroupPermissions['sysop']['createaccount']   = true;
 $wgGroupPermissions['user' ]['edit']            = true;
 $wgGroupPermissions['user' ]['read']            = true;
+$wgGroupPermissions['user' ]['delete']          = true;
+$wgGroupPermissions['user' ]['move']            = true;
 
 #Approved Revs Grouppermissions
 $wgGroupPermissions['*']['viewlinktolatest'] = false;
