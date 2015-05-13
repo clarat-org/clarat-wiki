@@ -129,7 +129,7 @@ $wgDiff3 = "/usr/bin/diff3";
 # The following permissions were set based on your choice in the installer
 $wgGroupPermissions['*'    ]['createaccount']   = false;
 $wgGroupPermissions['*'    ]['edit']            = false;
-$wgGroupPermissions['*'    ]['read']            = false;
+$wgGroupPermissions['*'    ]['read']            = true;
 $wgGroupPermissions['sysop']['createaccount']   = true;
 $wgGroupPermissions['user' ]['edit']            = true;
 $wgGroupPermissions['user' ]['read']            = true;
