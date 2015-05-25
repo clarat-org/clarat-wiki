@@ -188,3 +188,7 @@ require_once( 'extensions/SelectCategory/SelectCategory.php' );
 
 #Open links in new Tab
 $wgExternalLinkTarget = '_blank';
+
+
+#Allow Fileupload
+$wgEnableUploads = true;
