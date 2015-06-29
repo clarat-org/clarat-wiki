@@ -2,4 +2,3 @@ AuthUserFile /app/.htpasswd
 AuthType Basic
 AuthName "Restricted Access"
 Require valid-user
-session.gc_maxlifetime = 7200;
