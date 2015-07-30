@@ -137,11 +137,11 @@ $wgGroupPermissions['user' ]['delete']          = true;
 $wgGroupPermissions['user' ]['move']            = true;
 
 #Approved Revs Grouppermissions
-#$wgGroupPermissions['*']['viewlinktolatest'] = false;
-#$wgGroupPermissions['sysop']['viewlinktolatest'] = true;
-#$wgGroupPermissions['sysop']['approverevisions'] = true;
-#$wgGroupPermissions['user']['viewlinktolatest'] = true;
-#$wgGroupPermissions['user']['approverevisions'] = true;
+$wgGroupPermissions['*']['viewlinktolatest'] = false;
+$wgGroupPermissions['sysop']['viewlinktolatest'] = true;
+$wgGroupPermissions['sysop']['approverevisions'] = true;
+$wgGroupPermissions['user']['viewlinktolatest'] = true;
+$wgGroupPermissions['user']['approverevisions'] = true;
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
@@ -162,12 +162,12 @@ require_once "$IP/skins/Vector/Vector.php";
 require_once( 'extensions/NewestPages/NewestPages.php' );
 
 #activate Approved Revs
-#require_once( "$IP/extensions/ApprovedRevs/ApprovedRevs.php" );
+require_once( "$IP/extensions/ApprovedRevs/ApprovedRevs.php" );
 
 
-#$egApprovedRevsBlankIfUnapproved = true;
-#$egApprovedRevsShowApproveLatest = true;
-#$egApprovedRevsAutomaticApprovals = false;
+$egApprovedRevsBlankIfUnapproved = true;
+$egApprovedRevsShowApproveLatest = true;
+$egApprovedRevsAutomaticApprovals = false;
 
 
 #WikiEditor aktivieren
