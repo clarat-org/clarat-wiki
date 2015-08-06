@@ -192,3 +192,6 @@ $wgExternalLinkTarget = '_blank';
 
 #Allow Fileupload
 $wgEnableUploads = true;
+
+#Enable Replace-Text Extension
+require_once( "$IP/extensions/ReplaceText/ReplaceText.php" );
