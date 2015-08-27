@@ -195,6 +195,3 @@ $wgEnableUploads = true;
 
 #Enable Replace-Text Extension
 require_once( "$IP/extensions/ReplaceText/ReplaceText.php" );
-
-#Enable Caching
-$wgMainCacheType = CACHE_ACCEL;
