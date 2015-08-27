@@ -2,3 +2,7 @@ AuthUserFile /app/.htpasswd
 AuthType Basic
 AuthName "Restricted Access"
 Require valid-user
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule (.*) http://wiki.clarat.org/$1 [R=301,L]
