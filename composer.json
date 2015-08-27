@@ -28,5 +28,13 @@
 		"ext-wikidiff2": "*",
 		"ext-apc": "*",
 		"monolog/monolog": "*"
-	}
+	},
+
+
+    "require": {
+        "ext-apcu": "*"
+    }
+	
 }
+
+
