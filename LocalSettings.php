@@ -195,3 +195,8 @@ $wgEnableUploads = true;
 
 #Enable Replace-Text Extension
 require_once( "$IP/extensions/ReplaceText/ReplaceText.php" );
+
+
+#Enable Cirrus-Search
+require_once "$IP/extensions/CirrusSearch/CirrusSearch.php";
+require_once "$IP/extensions/Elastica/Elastica.php";
