@@ -1,0 +1,8 @@
+.svn
+*~
+*.kate-swp
+.*.swp
+.indexed
+tests/browser/cucumber_failures.log
+tests/browser/.bundle
+tests/browser/screenshots
