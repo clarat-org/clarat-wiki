@@ -1,8 +1,9 @@
-#RewriteEngine On
-#RewriteBase /
-#RewriteCond %{HTTP_HOST} !wiki.clarat.org$ [NC]
-#RewriteRule ^(.*)$ http://wiki.clarat.org/$1 [L,R=301]
-#AuthUserFile /app/.htpasswd
-#AuthType Basic
-#AuthName "Restricted Access"
-#Require valid-user
+AuthUserFile /app/.htpasswd
+AuthType Basic
+AuthName "Restricted Access"
+Require valid-user
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !wiki.clarat.org$ [NC]
+RewriteRule ^(.*)$ http://wiki.clarat.org/$1 [L,R=301]
+
