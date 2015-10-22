@@ -178,6 +178,12 @@ $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 #Cite Extension aktivieren
 require_once("$IP/extensions/Cite/Cite.php");
 
+#Enable MassEditRegex
+
+require_once "$IP/extensions/MassEditRegex/MassEditRegex.php";
+$wgGroupPermissions['sysop']['masseditregex'] = true;
+
+
 
 #activate 'Category Tree' extension
 $wgUseAjax = true;
