@@ -170,24 +170,21 @@ require_once( 'extensions/NewestPages/NewestPages.php' );
 #$egApprovedRevsAutomaticApprovals = false;
 
 
-#WikiEditor aktivieren
-require_once "$IP/extensions/WikiEditor/WikiEditor.php";
-$wgDefaultUserOptions['usebetatoolbar'] = 1;
-$wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
+
 
 #Cite Extension aktivieren
 require_once("$IP/extensions/Cite/Cite.php");
 
 #Enable MassEditRegex
 
-require_once "$IP/extensions/MassEditRegex/MassEditRegex.php";
-$wgGroupPermissions['sysop']['masseditregex'] = true;
+#require_once "$IP/extensions/MassEditRegex/MassEditRegex.php";
+#$wgGroupPermissions['sysop']['masseditregex'] = true;
 
 
 
 #activate 'Category Tree' extension
-$wgUseAjax = true;
-require_once "$IP/extensions/CategoryTree/CategoryTree.php";
+#$wgUseAjax = true;
+#require_once "$IP/extensions/CategoryTree/CategoryTree.php";
 
 #activate 'select Category' extension
 require_once( 'extensions/SelectCategory/SelectCategory.php' );
@@ -199,10 +196,17 @@ $wgExternalLinkTarget = '_blank';
 #Allow Fileupload
 $wgEnableUploads = true;
 
+#WikiEditor aktivieren
+require_once "$IP/extensions/WikiEditor/WikiEditor.php";
+$wgDefaultUserOptions['usebetatoolbar'] = 1;
+$wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
+$wgDefaultUserOptions['wikieditor-preview'] = 1;
+
 #Enable Replace-Text Extension
-require_once( "$IP/extensions/ReplaceText/ReplaceText.php" );
+#require_once( "$IP/extensions/ReplaceText/ReplaceText.php" );
 
 
 #Enable Cirrus-Search
-require_once "$IP/extensions/CirrusSearch/CirrusSearch.php";
-require_once "$IP/extensions/Elastica/Elastica.php";
+#require_once "$IP/extensions/CirrusSearch/CirrusSearch.php";
+#require_once "$IP/extensions/Elastica/Elastica.php";
+
