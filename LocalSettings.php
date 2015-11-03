@@ -211,4 +211,4 @@ $wgDefaultUserOptions['wikieditor-preview'] = 1;
 #require_once "$IP/extensions/Elastica/Elastica.php";
 
 #allow lowercase Titles
-#$wgCapitalLinks = false;
+$wgCapitalLinks = false;
