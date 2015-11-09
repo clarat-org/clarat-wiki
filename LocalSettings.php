@@ -210,5 +210,5 @@ $wgDefaultUserOptions['wikieditor-preview'] = 1;
 #require_once "$IP/extensions/CirrusSearch/CirrusSearch.php";
 #require_once "$IP/extensions/Elastica/Elastica.php";
 
-#allow lowercase letter
-$wgCapitalLinks = false;
+#allow lowercase Titles
+#$wgCapitalLinks = false;
