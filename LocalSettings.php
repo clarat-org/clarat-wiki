@@ -83,7 +83,7 @@ $wgMemCachedServers = array();
 
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
-$wgEnableUploads = false;
+$wgEnableUploads = true;
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 
@@ -155,22 +155,9 @@ require_once "$IP/skins/MonoBook/MonoBook.php";
 require_once "$IP/skins/Vector/Vector.php";
 
 
-# End of automatically generated settings.
-# Add more configuration options below.
 
 # Enable NewestPages extension
 require_once( 'extensions/NewestPages/NewestPages.php' );
-
-#activate Approved Revs
-#require_once( "$IP/extensions/ApprovedRevs/ApprovedRevs.php" );
-
-
-#$egApprovedRevsBlankIfUnapproved = true;
-#$egApprovedRevsShowApproveLatest = true;
-#$egApprovedRevsAutomaticApprovals = false;
-
-
-
 
 #Cite Extension aktivieren
 require_once("$IP/extensions/Cite/Cite.php");
@@ -182,10 +169,6 @@ require_once("$IP/extensions/Cite/Cite.php");
 
 
 
-#activate 'Category Tree' extension
-#$wgUseAjax = true;
-#require_once "$IP/extensions/CategoryTree/CategoryTree.php";
-
 #activate 'select Category' extension
 require_once( 'extensions/SelectCategory/SelectCategory.php' );
 
@@ -193,8 +176,6 @@ require_once( 'extensions/SelectCategory/SelectCategory.php' );
 $wgExternalLinkTarget = '_blank';
 
 
-#Allow Fileupload
-$wgEnableUploads = true;
 
 #WikiEditor aktivieren
 require_once "$IP/extensions/WikiEditor/WikiEditor.php";
@@ -202,13 +183,7 @@ $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 $wgDefaultUserOptions['wikieditor-preview'] = 1;
 
-#Enable Replace-Text Extension
-#require_once( "$IP/extensions/ReplaceText/ReplaceText.php" );
 
-
-#Enable Cirrus-Search
-#require_once "$IP/extensions/CirrusSearch/CirrusSearch.php";
-#require_once "$IP/extensions/Elastica/Elastica.php";
-
-#allow lowercase Titles
-#$wgCapitalLinks = false;
+#Enable filecaching
+$wgUseFileCache = true;
+$wgUseGzip = true;
