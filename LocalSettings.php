@@ -188,7 +188,6 @@ $wgDefaultUserOptions['wikieditor-preview'] = 1;
 $wgUseFileCache = true;
 $wgUseGzip = true;
 $wgShowIPinHeader = false;
-$wgFileCacheDirectory = {$wgUploadDirectory}/cache;
 
 
 #Enable Detailed Errors
