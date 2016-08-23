@@ -187,3 +187,7 @@ $wgDefaultUserOptions['wikieditor-preview'] = 1;
 #Enable filecaching
 $wgUseFileCache = true;
 $wgUseGzip = true;
+
+
+#Enable Detailed Errors
+$wgShowExceptionDetails = true;
