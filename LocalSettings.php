@@ -209,8 +209,8 @@ $wgUseGzip = true;
 $wgEnableSidebarCache = true;
 
 # NO DB HITS!
-$wgDisableCounters = true;
-$wgMiserMode = true;
+#$wgDisableCounters = true;
+#$wgMiserMode = true;
 
 # Text cache
 $wgCompressRevisions = true;
