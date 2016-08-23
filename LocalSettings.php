@@ -30,7 +30,7 @@ $wgScriptPath = "";
 $wgScriptExtension = ".php";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://clarat-wiki.herokuapp.com";
+$wgServer = "http://wiki.clarat.org";
 
 ## The relative URL path to the skins directory
 $wgStylePath = "$wgScriptPath/skins";
@@ -188,7 +188,31 @@ $wgDefaultUserOptions['wikieditor-preview'] = 1;
 $wgUseFileCache = true;
 $wgUseGzip = true;
 $wgShowIPinHeader = false;
+$wgCacheDirectory= "/cache";
 
 
 #Enable Detailed Errors
 $wgShowExceptionDetails = true;
+
+
+
+#Performance Testing
+
+# Shared memory settings
+$wgMainCacheType = CACHE_ACCEL;
+$wgMessageCacheType = CACHE_ACCEL;
+$wgCacheDirectory = '/cache';
+$wgUseLocalMessageCache = true;
+$wgParserCacheType = CACHE_ACCEL;
+$wgMemCachedServers = array();
+$wgUseGzip = true;
+$wgEnableSidebarCache = true;
+
+# NO DB HITS!
+$wgDisableCounters = true;
+$wgMiserMode = true;
+
+# Text cache
+$wgCompressRevisions = true;
+$wgRevisionCacheExpiry = 3*24*3600;
+$wgParserCacheExpireTime = 14*24*3600;
