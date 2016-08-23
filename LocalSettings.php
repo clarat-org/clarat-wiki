@@ -185,10 +185,10 @@ $wgDefaultUserOptions['wikieditor-preview'] = 1;
 
 
 #Enable filecaching
-$wgUseFileCache = true;
-$wgUseGzip = true;
-$wgShowIPinHeader = false;
-$wgCacheDirectory= "/cache";
+#$wgUseFileCache = true;
+#$wgUseGzip = true;
+#$wgShowIPinHeader = false;
+#$wgCacheDirectory= "/app/cache/wiki";
 
 
 #Enable Detailed Errors
@@ -201,7 +201,7 @@ $wgShowExceptionDetails = true;
 # Shared memory settings
 $wgMainCacheType = CACHE_ACCEL;
 $wgMessageCacheType = CACHE_ACCEL;
-$wgCacheDirectory = '/cache';
+$wgCacheDirectory = '/app/cache/wiki';
 $wgUseLocalMessageCache = true;
 $wgParserCacheType = CACHE_ACCEL;
 $wgMemCachedServers = array();
