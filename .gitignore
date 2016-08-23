@@ -1,7 +1,3 @@
 images/Thumbs.db
-images/Thumbs.db
-images/Thumbs.db
-images/Thumbs.db
-images/Thumbs.db
-images/Thumbs.db
-images/Thumbs.db
+/vendor/
+composer.phar
