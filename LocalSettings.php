@@ -131,10 +131,10 @@ $wgGroupPermissions['*'    ]['createaccount']   = false;
 $wgGroupPermissions['*'    ]['edit']            = false;
 $wgGroupPermissions['*'    ]['read']            = true;
 $wgGroupPermissions['sysop']['createaccount']   = true;
-$wgGroupPermissions['user' ]['edit']            = true;
+$wgGroupPermissions['user' ]['edit']            = false;
 $wgGroupPermissions['user' ]['read']            = true;
-$wgGroupPermissions['user' ]['delete']          = true;
-$wgGroupPermissions['user' ]['move']            = true;
+$wgGroupPermissions['user' ]['delete']          = false;
+$wgGroupPermissions['user' ]['move']            = false;
 
 #Approved Revs Grouppermissions
 #$wgGroupPermissions['*']['viewlinktolatest'] = false;
