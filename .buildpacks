@@ -1,3 +1,3 @@
 https://github.com/heroku/heroku-buildpack-php
 https://github.com/fletom/heroku-buildpack-ssh
-https://github.com/ddollar/heroku-buildpack-apt
+https://github.com/heroku/heroku-buildpack-multi.git
